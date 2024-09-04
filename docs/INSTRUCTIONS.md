@@ -19,7 +19,7 @@ Je leert aantekeningen bijhouden en gestructureerd studeren. Tijdens de Retrospe
 
 
 
-### Semester 1
+### Semester 1 ;)
 
 Maak met HTML, CSS en JS je eigen statische website. Hou je voortgang bij in de Wiki met Markdown, of voeg dit ook als HTML bestanden toe aan je website. Alles mag.
 
