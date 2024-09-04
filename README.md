@@ -1,10 +1,15 @@
-# i-love-web
-
-Learning journal, blog, digital gardening
-
-De instructie voor de I Love Web vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/i-love-web/blob/main/docs/INSTRUCTIONS.md)
+- geleerd hoe we een breakdown schets maken 
+- geleerd hoe we in htlm werken 
+-geleerd hoe we in verband van desktop fouten kunnen verbeteren of zien waar het aan ligt 
 
 
-## Licentie
+BREAKDOWN schets
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+waarom gebruiken we een breakdownschets?
+wat is een breakdownschets?
+waarom schrijf je bij een breakdownscchets notities zoals html tekens?
+
+wat moet ik nog leren/ verbeteren 
+- visitekaartje ( html)
+-visitekaartje ( css)
+
