@@ -12,4 +12,11 @@ waarom schrijf je bij een breakdownscchets notities zoals html tekens?
 wat moet ik nog leren/ verbeteren 
 - visitekaartje ( html)
 -visitekaartje ( css)
+--------
+
+geleerd hoe we audio/animatie kunnen toevoegen
+geleerd hoe we javascript kunnen gebruiken
+geleerd hoe we moeten werken in css
+
+
 
