@@ -18,5 +18,10 @@ geleerd hoe we audio/animatie kunnen toevoegen
 geleerd hoe we javascript kunnen gebruiken
 geleerd hoe we moeten werken in css
 
+-wat is er anders aan javascript dan html
+-waar moet je op letten als je javascript gebuikt
+- hoe kan je in verband met code een adio of animatie toevoegen 
+
+
 
 
