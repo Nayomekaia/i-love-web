@@ -22,6 +22,15 @@ geleerd hoe we moeten werken in css
 -waar moet je op letten als je javascript gebuikt
 - hoe kan je in verband met code een adio of animatie toevoegen 
 
+-------
+- geleerd hoe je het beste dikgedrukte woorden in je code zet
+- geleerd hoe je het de beste strategie kiest woor je project 
+- geleer hoe je overzichtelijk je code inright
+
+hoe zet je het beste dikgedruktewoorden in je code
+hoe maak je je code het meest overzichtelijk 
+hoe bepaal je de beste stratgie voor het project die je hebt 
+
 
 
 
