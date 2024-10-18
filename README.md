@@ -22,6 +22,15 @@ geleerd hoe we moeten werken in css
 -waar moet je op letten als je javascript gebuikt
 - hoe kan je in verband met code een adio of animatie toevoegen 
 
+-----
 
+>geleerd wat een wireframe is
+> geleerd wat een wireflow is
+>geleerd wat er in een wireframe en wireframe moet staan en hoe je die maakt
+
+
+wat is het vershil tussen een wireframe en wireflow
+hoe maak je een wireframe
+hoe maak je een wireflow 
 
 
