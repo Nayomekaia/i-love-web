@@ -1,36 +1,20 @@
-- geleerd hoe we een breakdown schets maken 
-- geleerd hoe we in htlm werken 
--geleerd hoe we in verband van desktop fouten kunnen verbeteren of zien waar het aan ligt 
+# Learning Journal
 
+## Inleiding
+Welkom bij mijn Learning Journal! Dit project is een persoonlijke digitale notitieboek waarin ik mijn leerervaringen documenteer en reflecteer op de onderwerpen die ik heb bestudeerd in de wereld van webontwikkeling. Het journal bevat verschillende sprints, waarbij elke sprint notities en lessen bevat die ik tijdens mijn leerproces heb verzameld.
 
-BREAKDOWN schets
+## Inhoud
+- **Sprint 1**
+- **Sprint 2**
+- **Sprint 3**
 
-waarom gebruiken we een breakdownschets?
-wat is een breakdownschets?
-waarom schrijf je bij een breakdownscchets notities zoals html tekens?
+## Functionaliteiten
+- **Interactieve Notities**: Klik op de sprints om notities te tonen of te verbergen. Elke notitie kan worden omgedraaid om meer gedetailleerde informatie te onthullen.
+- **Responsief Design**: Het journal is ontworpen om goed te functioneren op verschillende apparaten en schermformaten.
 
-wat moet ik nog leren/ verbeteren 
-- visitekaartje ( html)
--visitekaartje ( css)
---------
-
-geleerd hoe we audio/animatie kunnen toevoegen
-geleerd hoe we javascript kunnen gebruiken
-geleerd hoe we moeten werken in css
-
--wat is er anders aan javascript dan html
--waar moet je op letten als je javascript gebuikt
-- hoe kan je in verband met code een adio of animatie toevoegen 
-
------
-
->geleerd wat een wireframe is
-> geleerd wat een wireflow is
->geleerd wat er in een wireframe en wireframe moet staan en hoe je die maakt
-
-
-wat is het vershil tussen een wireframe en wireflow
-hoe maak je een wireframe
-hoe maak je een wireflow 
-
+## Technologieën
+Dit project is gebouwd met behulp van:
+- **HTML**: Voor de structuur van de pagina.
+- **CSS**: Voor styling en lay-out.
+- **JavaScript**: Voor interactieve elementen zoals het tonen van notities en het omdraaien van kaartjes.
 
