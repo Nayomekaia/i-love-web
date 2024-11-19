@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family:'pixel-font';
+    src: url('pixel-font.otf') format('opentype');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family:'pixel-font', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
