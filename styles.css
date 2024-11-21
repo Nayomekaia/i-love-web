@@ -6,7 +6,7 @@
 
 @font-face {
     font-family:'pixel-font';
-    src: url('pixel-font.otf') format('opentype');
+    src: url('./PixelFont-Regular.otf') format('opentype');
 }
 
 body {
