@@ -14,6 +14,10 @@ app.engine('liquid', engine.express())
 app.set('views', './views')
 app.set('view engine', 'liquid')
 
+// data
+const PersonResponse = await fetch('https://fdnd.directus.app/items/person/179')
+const PersonResponseJSON = await PersonResponse.json()
+
 // Routes
 app.get('/', async function (request, response) {
   response.render('index.liquid')
@@ -24,7 +28,9 @@ app.get('/journal', async function (request, response) {
 })
 
 app.get('/create', async function (request, response) {
-  response.render('create.liquid')
+  response.render('create.liquid', 
+    { person: json.data }
+  )
 })
 
 app.use((req, res, next) => {
