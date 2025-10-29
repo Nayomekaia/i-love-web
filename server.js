@@ -15,11 +15,21 @@ app.set('views', './views')
 app.set('view engine', 'liquid')
 
 // Routes
-app.get('/', (req, res) => {
-  res.render('index', { title: 'I Love Web', message: 'Hello from Liquid!' })
+app.get('/', async function (request, response) {
+  response.render('index.liquid')
 })
 
-app.get('/health', (req, res) => res.type('text').send('ok'))
+app.get('/journal', async function (request, response) {
+  response.render('journal.liquid')
+})
+
+app.get('/create', async function (request, response) {
+  response.render('create.liquid')
+})
+
+app.use((req, res, next) => {
+  res.status(404).render('404.liquid');
+})
 
 const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {
