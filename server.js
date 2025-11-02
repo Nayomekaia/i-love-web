@@ -40,10 +40,16 @@ const save = () => {
 // Routes
 app.get('/', async function (request, response) {
   response.render('index.liquid')
+app.get('/', (req, res) => {
+  res.render('index', { person: PersonResponseJSON.data })
 })
 
 app.get('/journal', async function (request, response) {
   response.render('journal.liquid')
+app.get('/journal', (req, res) => {
+  res.render('journal', {
+    posts,
+  })
 })
 
 app.get('/create', async function (request, response) {
@@ -59,4 +65,5 @@ app.use((req, res, next) => {
 const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {
   console.log(`Application started on http://localhost:${PORT}`)
+app.get('/create', (req, res) =>
 })
