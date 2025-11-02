@@ -1,1 +1,29 @@
-here comes overview jorunal
+{% render 'partials/head.liquid' %}
+
+<section class="intro">
+<article class="journal">
+<h1>Learning Journal</h1>
+<p>Welcome to my Learning Journal a space where I document what I’ve learned, explored, and created.  Here you’ll find reflections, experiments, and insights I’ve gained throughout my studies and projects.</p>
+</article>
+
+<p>Create a new journal page here </p>
+<a href='/create'>Create</a>
+</section> 
+
+
+<ul class="posts">
+  {% for post in posts %}
+    <li>
+      <section class="post">
+      <img class='home-eyes'src="/static/post.svg" alt="Eyes icon">
+      <h3> {{ post.title }}</h3>
+     <article>
+      <p>{{post.intro }}<p>
+      </article>
+      <a href="/journal/{{ post.slug | default: post.id }}">meer info</a>
+      </section>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include 'partials/foot.liquid' %}

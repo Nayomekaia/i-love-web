@@ -1,0 +1,34 @@
+{% render 'partials/head.liquid' %}
+
+<section class="detail">
+<a href="/journal">terug</a>
+
+<article class="intro">
+<h1>{{ post.title }}</h1>
+<p>{{post.intro}}</p>
+</article>
+
+<div class="detail-wrapper">
+
+<section class="detail-post">
+{% if post.date %}<p><small>{{ post.date }}</small></p>{% endif %}
+  <h2>{{post.subtitle}}</h2>
+<article>{{ post.content }}</article>
+<section>
+{% if post.img %}{{ post.img }}{% endif %}
+{% if post.code %}<p>{{ post.code }}</p>{% endif %}
+</section>
+
+
+{% if post.link %}
+<a href='{{post.link}}'>Example</a>
+{% endif %}
+
+<form method="post" action="/journal/delete" onsubmit="return confirm('Verwijderen?')">
+  <input type="hidden" name="id" value="{{ post.id }}">
+  <button type="submit">Verwijderen</button>
+</form>
+</section>
+</section>
+</div>
+{% include 'partials/foot.liquid' %}

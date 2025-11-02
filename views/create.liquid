@@ -1,1 +1,30 @@
-here comes the create your own jorunal page 
+{% render 'partials/head.liquid' %}
+
+<article class="intro-create">
+<h1>Create your Journal Page</h1>
+<p>Create your own journal page share your findings </p>
+
+</article>
+<form method="post" action="/journal"class="form">
+  <p><label>Title <input name="title" required></label></p>
+  <p><label>Subtitle <input name="summary"></label></p>
+  <p><label>intro <textarea name="intro" rows="6" required></textarea></label></p>
+  <p><label>content <textarea name="content" rows="6" required></textarea></label></p>
+  <p><label>Date<input name="date" placeholder="2025-10-29"></label></p>
+  
+  <p>Visual examples</p>
+  <p><label>Code <input name="code"></label></p>
+  <p><label>link <input name="link"></label></p>
+  
+  <p>
+    <label for="tags" required>Tag</label>
+    <select name="tags" id="tags">
+      <option disabled selected>Kies een tag</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+    </select>
+  </p>
+  
+  <button type="submit">Post</button>
+</form>
+{% include 'partials/foot.liquid' %}
