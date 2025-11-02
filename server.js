@@ -66,4 +66,27 @@ const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {
   console.log(`Application started on http://localhost:${PORT}`)
 app.get('/create', (req, res) =>
+app.post('/journal', (req, res) => {
+  const { title, content, intro, subtitle, date, tags, slug } = req.body
+  if (!title || !content) return res.redirect('/create?state=error')
+
+  const id = Date.now()
+  const baseSlug = ((slug && slug.trim()) || title)
+    .toLowerCase().trim().replace(/[\s_]+/g, '-').replace(/[^a-z0-9-]/g, '').replace(/-+/g, '-')
+  const finalSlug = posts.some(p => p.slug === baseSlug) ? `${baseSlug}-${id}` : baseSlug
+
+  const newPost = {
+    id,
+    slug: finalSlug,
+    title: title.trim(),
+    subtitle: (subtitle || '').trim(),
+    intro: (intro || '').trim(),
+    content: content.trim(),
+    date: (date && date.trim()) || new Date().toISOString().slice(0, 10),
+    tags: (tags || '').split(',').map(t => t.trim()).filter(Boolean)
+  }
+
+  posts.unshift(newPost)
+  save()
+  res.redirect('/journal?state=created')
 })
