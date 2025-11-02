@@ -1,3 +1,45 @@
+html,
 body {
-    background-color: aqua;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/*header*/
+nav {
+  & ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: a;
+    gap: 1em;
+    padding: 2em;
+    margin-bottom: 3em;
+    width: 90%;
+    position: sticky;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    & ul {
+      align-items: center;
+      justify-content: center;
+      gap: 10em;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    & ul {
+      align-items: center;
+      justify-content: center;
+      gap: 15em;
+    }
+  }
+}
+
 }
