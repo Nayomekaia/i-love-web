@@ -56,6 +56,12 @@ app.get('/create', async function (request, response) {
   response.render('create.liquid', 
     { person: json.data }
   )
+// Dynamic Routes
+app.get('/journal/:id', (req, res) => {
+  const key = String(req.params.id)
+  const post = posts.find(p => String(p.id) === key || String(p.slug || '') === key)
+  if (!post) return res.status(404).render('404', { message: 'Post niet gevonden' })
+  res.render('detail', { post })
 })
 
 app.use((req, res, next) => {
