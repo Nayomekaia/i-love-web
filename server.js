@@ -51,6 +51,8 @@ app.get('/journal/:id', (req, res) => {
   res.render('detail', { post })
 })
 
+app.get('/filter', (req, res) => {
+  res.render('filter', { person: PersonResponseJSON.data })
 })
 
 app.get('/create', (req, res) =>
