@@ -1,0 +1,41 @@
+[
+  {
+    "id": "first-post",
+    "title": "subgrid",
+    "subtitle": "My First Learning Note",
+    "intro": "Welcome to my Learning Journal a space where I document what I’ve learned, explored, and created.  Here you’ll find reflections, experiments, and insights I’ve gained throughout my studies and projects.",
+    "date": "2025-10-28",
+    "tags": [
+      "css"
+    ],
+    "content": "Welcome to I Love Web a personal space where I collect everything I learn, build, and experiment with on the web. Here you’ll find my learning notes, creative experiments, and projects that reflect my growth as a designer and developer. It’s a mix of curiosity, exploration, and a deep love for the web."
+  },
+
+  {
+    "id": "second-post",
+    "title": "subgrid",
+    "subtitle": "My First Learning Note",
+    "intro": "Welcome to my Learning Journal a space where I document what I’ve learned, explored, and created.  Here you’ll find reflections, experiments, and insights I’ve gained throughout my studies and projects.",
+    "date": "2025-10-28",
+    "tags": [
+      "css"
+    ],
+    "excerpt": "What I tested today and what I learned…",
+    "content": "Welcome to I Love Web a personal space where I collect everything I learn, build, and experiment with on the web. Here you’ll find my learning notes, creative experiments, and projects that reflect my growth as a designer and developer. It’s a mix of curiosity, exploration, and a deep love for the web.",
+    "cover": "/images/journal/first.jpg"
+  },
+
+  {
+    "id": "third-post",
+    "title": "subgrid",
+    "subtitle": "My First Learning Note",
+    "intro": "Welcome to my Learning Journal a space where I document what I’ve learned, explored, and created.  Here you’ll find reflections, experiments, and insights I’ve gained throughout my studies and projects.",
+    "date": "2025-10-28",
+    "tags": [
+      "fdnd"
+    ],
+    "excerpt": "What I tested today and what I learned…",
+    "content": "Welcome to I Love Web a personal space where I collect everything I learn, build, and experiment with on the web. Here you’ll find my learning notes, creative experiments, and projects that reflect my growth as a designer and developer. It’s a mix of curiosity, exploration, and a deep love for the web.",
+    "cover": "/images/journal/first.jpg"
+  }
+]
