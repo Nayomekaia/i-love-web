@@ -230,4 +230,137 @@ nav {
   }
 }
 
+/*journal*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  & .journal {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  & h1 {
+    text-align: center;
+    max-width: 200px;
+    margin: 2em auto;
+  }
+
+  & p {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  & a {
+    margin-bottom: 10em;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+
+  & button {
+    margin-left: 2em;
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 10px 15px;
+    border: var(--button-border);
+    border-radius: var(--button-radius);
+
+    &:hover {
+      background-color: var(--primary-color-white);
+      color: var(--primary-color-black);
+      border: none;
+      outline: 1.5px solid var(--primary-color-black);
+    }
+  }
+
+  & select {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: var(--button-border);
+    border-radius: var(--button-radius);
+    padding: 10px 150px;
+    font-size: var(--button-font-size);
+    font-weight: var(--button-weight);
+    cursor: pointer;
+    font-family: var(--button-font-family);
+  }
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2em;
+  margin-bottom: 3em;
+  max-width: 500px;
+
+  & h3 {
+    color: var(--primary-color-black);
+  }
+
+  & article {
+    background-color: var(--primary-color-white);
+    border: solid 1px var(--primary-color-black);
+    color: var(--primary-color-black);
+    border-radius: 2em;
+    padding: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto 5em;
+  }
+}
+
+.post {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  border-radius: 2em;
+  background-color: var(--accent-blue);
+  padding: 0.5em;
+  align-items: center;
+  justify-items: center;
+  border: solid 1px var(--primary-color-black);
+
+  & a {
+    display: inline-block;
+    background: var(--primary-color-white);
+    color: var(--primary-color-black);
+    padding: 10px 15px;
+    border: solid 1px var(--primary-color-black);
+    border-radius: var(--button-radius);
+    position: relative;
+    text-align: center;
+
+    &:hover {
+      background-color: var(--primary-color-black);
+      color: var(--primary-color-white);
+    }
+  }
+
+  & img {
+    width: 150px;
+    height: 90px;
+  }
+}
 }
