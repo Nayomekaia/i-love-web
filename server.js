@@ -90,3 +90,10 @@ app.post('/journal', (req, res) => {
   save()
   res.redirect('/journal?state=created')
 })
+
+app.post('/journal/delete', (req, res) => {
+  const len = posts.length
+  posts = posts.filter(p => String(p.id) !== String(req.body.id))
+  if (posts.length !== len) { save(); return res.redirect('/journal?state=deleted') }
+  res.redirect('/journal?state=notfound')
+})
