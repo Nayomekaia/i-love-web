@@ -5,6 +5,7 @@
 <p>Create your own journal page share your findings </p>
 
 </article>
+{% if uiState == 'error' %}<p style="color:red">Titel en content zijn verplicht.</p>{% endif %}
 <form method="post" action="/journal"class="form">
   <p><label>Title <input name="title" required></label></p>
   <p><label>Subtitle <input name="summary"></label></p>

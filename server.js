@@ -49,6 +49,7 @@ app.get('/journal', async function (request, response) {
 app.get('/journal', (req, res) => {
   res.render('journal', {
     posts,
+    uiState: req.query.state || 'normal'
   })
 })
 
@@ -72,6 +73,10 @@ const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {
   console.log(`Application started on http://localhost:${PORT}`)
 app.get('/create', (req, res) =>
+  res.render('create', { uiState: req.query.state || 'normal' })
+)
+
+// Post route 
 app.post('/journal', (req, res) => {
   const { title, content, intro, subtitle, date, tags, slug } = req.body
   if (!title || !content) return res.redirect('/create?state=error')
