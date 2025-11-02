@@ -20,8 +20,22 @@ app.set('views', './views')
 app.set('view engine', 'liquid')
 
 // data
+// Data directus api
 const PersonResponse = await fetch('https://fdnd.directus.app/items/person/179')
 const PersonResponseJSON = await PersonResponse.json()
+
+// Data Local Json 
+const dataPath = path.join(process.cwd(), 'public', 'data', 'journal.json')
+let posts = []
+try {
+  const raw = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
+  posts = Array.isArray(raw) ? raw : (raw.posts || [])
+} catch { posts = [] }
+
+const save = () => {
+  fs.mkdirSync(path.dirname(dataPath), { recursive: true })
+  fs.writeFileSync(dataPath, JSON.stringify(posts, null, 2), 'utf-8')
+}
 
 // Routes
 app.get('/', async function (request, response) {
