@@ -103,3 +103,5 @@ app.post('/journal/delete', (req, res) => {
   if (posts.length !== len) { save(); return res.redirect('/journal?state=deleted') }
   res.redirect('/journal?state=notfound')
 })
+
+app.use((req, res) => res.status(404).render('404'))
