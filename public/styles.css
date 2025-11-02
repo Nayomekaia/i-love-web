@@ -557,4 +557,78 @@ nav {
   }
 }
 
+/*detailpagina*/
+.detail-post {
+  padding: 2em;
+  margin-top: 2em;
+  background-color: var(--accent-blue);
+  border-radius: 25px;
+  color: var(--accent-blue-dark);
+  margin-bottom: 5em;
+}
+
+h2 {
+  color: var(--accent-blue-dark);
+}
+
+article {
+  font-family: var(--font-accent);
+  max-width: 500px;
+}
+
+button {
+  display: block;
+  margin: 2em auto 2em;
+  background: var(--accent-blue);
+  color: var(--accent-blue-dark);
+  border: solid 2px var(--accent-blue-dark);
+  border-radius: var(--button-radius);
+  padding: 10px 20px;
+  font-size: var(--button-font-size);
+  font-weight: var(--button-weight);
+  text-decoration: none;
+  cursor: pointer;
+  font-family: var(--button-font-family);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-blue-dark);
+  color: var(--accent-blue);
+  border: none;
+  outline: 1.5px solid var(--accent-blue-dark);
+}
+
+@media (min-width: 1024px) {
+  .detail-post {
+    max-width: 800px;
+    margin-inline: auto;
+    padding: 3em 4em;
+    border-radius: 35px;
+    position: relative;
+    padding-bottom: 6em;
+
+    & h2 {
+      font-size: 2rem;
+    }
+
+    & article {
+      max-width: 640px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    & button {
+      margin-top: 3em;
+    }
+  }
+
+  .intro {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    margin: 0 auto;
+  }
 }
