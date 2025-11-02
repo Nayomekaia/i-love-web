@@ -8,18 +8,12 @@ const app = express()
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 
-// Liquid als view engine
-const engine = new Liquid({
-  root: './views',      
-  extname: '.liquid'    
-})
 // Liquid
 const engine = new Liquid({ root: './views', extname: '.liquid' })
 app.engine('liquid', engine.express())
 app.set('views', './views')
 app.set('view engine', 'liquid')
 
-// data
 // Data directus api
 const PersonResponse = await fetch('https://fdnd.directus.app/items/person/179')
 const PersonResponseJSON = await PersonResponse.json()
@@ -38,14 +32,10 @@ const save = () => {
 }
 
 // Routes
-app.get('/', async function (request, response) {
-  response.render('index.liquid')
 app.get('/', (req, res) => {
   res.render('index', { person: PersonResponseJSON.data })
 })
 
-app.get('/journal', async function (request, response) {
-  response.render('journal.liquid')
 app.get('/journal', (req, res) => {
   res.render('journal', {
     posts,
@@ -53,10 +43,6 @@ app.get('/journal', (req, res) => {
   })
 })
 
-app.get('/create', async function (request, response) {
-  response.render('create.liquid', 
-    { person: json.data }
-  )
 // Dynamic Routes
 app.get('/journal/:id', (req, res) => {
   const key = String(req.params.id)
@@ -65,13 +51,8 @@ app.get('/journal/:id', (req, res) => {
   res.render('detail', { post })
 })
 
-app.use((req, res, next) => {
-  res.status(404).render('404.liquid');
 })
 
-const PORT = process.env.PORT || 8000
-app.listen(PORT, () => {
-  console.log(`Application started on http://localhost:${PORT}`)
 app.get('/create', (req, res) =>
   res.render('create', { uiState: req.query.state || 'normal' })
 )
