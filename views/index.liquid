@@ -1,8 +1,14 @@
 {% render 'partials/head.liquid' %}
 
 
-{{ person.name}}
+<svg id="eyes" width="797" height="438" viewBox="0 0 797 438" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="160" cy="219" rx="135" ry="219" fill="white" />
+  <ellipse cx="662" cy="219" rx="135" ry="219" fill="white" />
+  <ellipse id="leftPupil" cx="160" cy="244" rx="80" ry="81" fill="black" />
+  <ellipse id="rightPupil" cx="662" cy="244" rx="80" ry="81" fill="black" />
+</svg>
 
+<script src="/js/eyes.js" defer></script>
 
 
 {% include 'partials/foot.liquid' %}
