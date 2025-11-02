@@ -1,0 +1,13 @@
+<h1>Filter expiriment</h1>
+<p>I am {{ person.name }}</p>
+
+<p>today it is  {{ 'now' | date: "%d-%m-%Y (%H:%M)" }}</p>
+<p> ik ben geboren op {{ person.birthdate }}</p>
+
+<details><summary>all Data</summary><pre>{{ person | json:4}}</pre></details>
+
+<h2>this comes out of the custom data</h2>
+
+<p> my favorite coffee is {{ person.fav_coffee}}</p>
+<p> i have the most energy  {{ person.most_energy}}</p>
+
